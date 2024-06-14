@@ -1,6 +1,6 @@
 _G.Settings = {
     ["key"] = _G.Key,
-    ["site"] = "https://yourwebsitelink.com/whitelist.php?key=",
+    ["site"] = "https://raw.githubusercontent.com/UnstableSolutions/neww/main/whitelist.php",
     ["text"] = "You're not whitelisted";
 }
 local abc = game:HttpGet(_G.Settings.site .. _G.Settings.key)
