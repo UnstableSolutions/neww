@@ -1,8 +1,7 @@
 <?php
-$github_url = "https://raw.githubusercontent.com/UnstableSolutions/neww/main/keys.json";
-$current_data = file_get_contents($github_url);
+$current_data = file_get_contents("keys.json");
 $array_data = json_decode($current_data, true);
-$key = $_GET["key"]; // Assuming key is passed through GET parameter, make sure to validate and sanitize it.
+$key = $_GET["key"];
 if(in_array($key, $array_data)){
     echo "success";
 }
